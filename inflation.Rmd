@@ -1,6 +1,6 @@
 ---
 title: "Inflation Data"
-author: "Aaron Peikert"
+author: "Omar Sherif"
 date: "`r Sys.Date()`"
 output: pdf_document
 repro:
@@ -15,17 +15,23 @@ repro:
     - data/raw/inflation.rds
 ---
 
+
 ```{r setup, include=FALSE}
 repro::automate_load_packages()
 repro::automate_load_scripts()
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+
+```{python}
+print('hello python')
+```
+
 The dataset we use stems from the [Bank of England Research datasets](https://www.bankofengland.co.uk/statistics/research-datasets).
 
 I quote:
 
-> This dataset contains the individual responses to our Inflation Attitudes Survey, a quarterly survey of people’s feelings about inflation and other economic variables like the interest rate. 
+> This **dataset** contains the individual responses to our Inflation Attitudes Survey, a quarterly survey of people’s feelings about inflation and other economic variables like the interest rate. 
 
 ```{r load-inflation}
 # code chunks can come from other scripts, this one is loaded from:
