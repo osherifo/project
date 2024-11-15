@@ -23,10 +23,6 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
-```{python}
-print('hello python')
-```
-
 The dataset we use stems from the [Bank of England Research datasets](https://www.bankofengland.co.uk/statistics/research-datasets).
 
 I quote:
